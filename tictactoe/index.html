@@ -1,0 +1,21 @@
+<html>
+  <head>
+  <title>Tic Tac Toe vs AI - Porfolio project</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <h1>Tic Tac Toe vs AI</h1>
+  <div class="board">
+    <div v-for="(cell, index) in board" :key="index" @click="makeMove(index)" class="cell">
+      {{ cell }}
+    </div>
+  </div>
+  <div class="status">{{ status }}</div>
+  <button @click="restartGame" class="restart">Restart Game</button>
+</div>
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</html>
